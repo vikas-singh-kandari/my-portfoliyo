@@ -37,10 +37,10 @@
                 <div class="about-col-1">
                     <img src="aboutsec.jpg" >
                 </div>
-                <div class="about-col-2">
+                <class class="about-col-2">
                     <h1 class="sub-tital">About Me</h1>
                     <p>Hii i am vikas singh. I'm a passionate app developer with expertise in Flutter, Java, C, and C++. I create user-friendly, high-performance apps for iOS, Android, desktop, and web using Flutter. My mission is to bring creativity and innovation to every project, ensuring they provide exceptional user experiences.</p>
-                    grklkrsesCzx/slsc 
+                   
                       <div class="tab-titals">
                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                        <p class="tab-links"onclick="opentab('experince')">Experince</p>
@@ -73,9 +73,11 @@
  
                         </ul>
                        </div> 
+                       </class>
             </div>
         </div>
     </div>
+    
     <!-- ===========================Services====================== -->
     <div id="services">
         <div class="contaner">
@@ -101,6 +103,7 @@
             </div>
            </div>
         </div>
+        
     </div>
     <!-- ==============================portfoliyo============================== -->
    <div id="portfoliyo">
@@ -143,20 +146,22 @@
             <div class="contact-left">
               <h1 class="sub-tital">Contact Me</h1>
                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
-               <p><i class="fa-solid fa-square-phone"></i>84496832</p>
+               <p><i class="fa-solid fa-square-phone"></i>8449683236</p>
                <div class="social-icon">
                 <a href="https://www.facebook.com/shivansh.kandari.1/"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://github.com/vikas-singh-kandari"><i class="fa-brands fa-square-github"></i></a>
                 <a href="https://instagram.com/itz_vikey_kandari?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/vikas-s-0b617824b/"><i class="fa-brands fa-linkedin"></i></a>
                </div>
+    
                <a href="resume.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form id="contactForm">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+                    <input type="date" name="date" placeholder="date" required>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
@@ -196,18 +201,7 @@ function opentab(tabname){
         function closemenu(){
             sidemenu.style.right="-200px";
         }
-    </script>  
-    
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwvOxMxMXfjZXGP7oj61zoM193binSChzSNd8l1jCMT-7LUBtefnDyahhrPbCKySMElhQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>   
+    </script> 
+    <script src="js.js"></script>
 </body>
 </html>

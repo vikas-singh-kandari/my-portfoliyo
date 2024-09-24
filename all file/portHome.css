@@ -286,14 +286,22 @@ background: #ff004f;
 /* =========================================contact++++++++++++++++++++++++++++++++++ */
 .contact-left{
 flex-basis: 35%;
+margin-left: 5%;
 }
 .contact-right{
    flex-basis: 60%;
+   margin-right: 5%;
 }
 .contact-left p{
    margin-top: 30px;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+   background:  #ff004f; 
+   border: 1px solid #ccc; 
+   border-radius: 3px; 
+   color: #ff004f;
+}
 .contact-left p i{
    color: #ff004f;
    margin-right: 15px;
@@ -346,6 +354,10 @@ form .btn2{
  margin-top: 20px;
  cursor: pointer;
 }
+form .btn2 a{
+   text-decoration: none;
+   color: #fff;
+}
 .copyright{
    width: 100%;
    text-align: center;
@@ -364,18 +376,25 @@ nav .fas{
    display: none;
 }
 @media only screen and (max-width:600px){
-  .header {
-      background-image: url('phon2.png');
-      background-position: center; /* Center the background image */
-      background-size: cover; /* Cover the entire container with the background image */
+  #header {
+      background-image: url('first.png');
+      background-position:center;
+       /* Center the background image */
+      background-size: cover;
+       /* Cover the entire container with the background image */
    }
+   
    .header-text {
       margin-top: 100%;
-      font-size: 16px;
+      font-size: 18px;
+      
    }
 
    .header-text h1 {
       font-size: 30px;
+   }
+   .header-text p{
+      font-size:20px;
    }
   nav .fas{
    display: block;
@@ -404,32 +423,106 @@ nav ul .fas{
    left: 25px;
    cursor: pointer;
 }
+
+#about{
+   border: 2px solid #ff004f;
+   border-radius: 10px;
+   margin-top: 5px;
+   margin-left: 3px;
+   margin-right: 3px;
+}
 .sub-tital{
-   font-size: 40px;
+   font-size: 30px;
+   color: #ff004f;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
 }
-.about-col-1, .about-col-2{
-   flex-basis: 100%;
-}
+ 
 
  .about-col-1{
-   margin-bottom: 30px;
+   display: none;
  }
  .about-col-2{
-   font-size: 40px;
+   font-size: 15px;
+   padding: 10px 10px 10px 10px 10px;
+   margin-left: 10px;
+   flex-basis: 100%;
  }
 
+ #services{
+   padding-left: 3px;
+   padding-right: 3px;
+ }
+
+ #portfoliyo{
+   padding-left: 3px;
+   padding-right: 3px;
+ }
+
+/*   */
  .tav-links{
    font-size: 16px;
    margin-right: 20px;
  }
- .contact-left, .contact-right{
-   flex-basis: 100%;
-
+ 
+ .contact-left{
+   display: block;
  }
+ 
  .copyright{
    font-size: 14px;
  }
+ .contact-left{
+   flex-basis: 100%;
+   }
+   .contact-right{
+      flex-basis: 60%;
+   }
+   .contact-left p{
+      margin-top: 30px;
+   }
+   
+   .contact-left p i{
+      color: #ff004f;
+      margin-left: 15px;
+      font-size: 25px;
+   
+   }
+   
+   .social-icon{
+      margin-top:30px;
+      margin-left: 15px;
+   }
+   
+   .social-icon a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #ababab;
+      display: inline-block;
+      transition:transform 0.5s;
+   }
+   .social-icon a:hover{
+      color: #ff004f;
+      transform: translateY(-5px);
+   }
+    
+   .contact-right form{
+    
+      display: none;
+   
+   }
 
+   .copyright{
+      width: 100%;
+      text-align: center;
+      padding:25px 0;
+      background: #262626;
+      font-weight: 300;
+      margin-top: 20px;
+   }
+   
+ 
 }
-
  
